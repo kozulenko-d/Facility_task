@@ -82,6 +82,11 @@ nav {
     display: none;
     cursor: pointer; }
 
+.top .carousel-item {
+  background-color: #000; }
+  .top .carousel-item img {
+    opacity: 0.5; }
+
 .sect {
   position: relative; }
   .sect a:first-child {
@@ -97,7 +102,9 @@ nav {
     margin: 0 auto 34px; }
     .carousel-caption p:first-child {
       font-family: "GothamProBold", sans-serif;
-      font-size: 75px; }
+      font-size: 75px;
+      width: 100%;
+      margin: 0 auto; }
   .carousel-caption .popup {
     margin: 0 auto;
     width: 170px;

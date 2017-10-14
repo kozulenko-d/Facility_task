@@ -23,7 +23,6 @@
 		font-weight: normal;
 }
 $fb : "GothamProBold", sans-serif;
-// $fr : "GothamProRegular", sans-serif;
 $t : all ease .7s;
 nav {
 	height: 80px;
@@ -98,6 +97,14 @@ nav {
 		cursor: pointer;
 	}
 }
+.top {
+	.carousel-item {
+		background-color: #000;
+		img {
+			opacity: 0.5;
+		}
+	}
+}
 .sect {
 	position: relative;
 	a:first-child {
@@ -115,6 +122,8 @@ nav {
 		&:first-child {
 			font-family: $fb;
 			font-size: 75px;
+			width: 100%;
+			margin: 0 auto;
 		}
 	}
 	.popup {
