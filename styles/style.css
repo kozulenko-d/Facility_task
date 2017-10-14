@@ -22,7 +22,9 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 30;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all ease 0.7s;
+  transition: all ease 0.7s; }
   nav .logo-box {
     display: inline-block;
     padding: 13px 0;
@@ -40,7 +42,17 @@ nav {
       position: relative;
       top: 2px; }
   nav .cross-button {
-    display: none; }
+    position: absolute;
+    font-size: 44px;
+    top: 20px;
+    right: 16px;
+    z-index: 15;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    cursor: pointer;
+    display: none;
+    -webkit-transition: all ease 0.7s;
+    transition: all ease 0.7s; }
   nav ul {
     float: right;
     font-size: 0;
@@ -60,6 +72,15 @@ nav {
         nav ul li a:hover {
           text-decoration: none;
           color: #545ad8; }
+  nav .burger-button {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 15;
+    top: 23px;
+    left: 16px;
+    display: none;
+    cursor: pointer; }
 
 .sect {
   position: relative; }
@@ -74,7 +95,10 @@ nav {
     width: 400px;
     font-size: 14px;
     margin: 0 auto 34px; }
-  .carousel-caption button {
+    .carousel-caption p:first-child {
+      font-family: "GothamProBold", sans-serif;
+      font-size: 75px; }
+  .carousel-caption .popup {
     margin: 0 auto;
     width: 170px;
     height: 50px;
@@ -83,12 +107,14 @@ nav {
     font-family: "GothamProBold", sans-serif;
     font-size: 16px;
     color: #fff;
+    background-color: #646464;
     cursor: pointer;
-    text-transform: uppercase; }
-
-h1 {
-  font-family: "GothamProBold", sans-serif;
-  font-size: 75px; }
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    line-height: 50px; }
+    .carousel-caption .popup:focus {
+      outline: none; }
 
 .buttonside {
   width: 50px;
@@ -98,13 +124,15 @@ h1 {
   border-radius: 50%;
   top: 47%;
   opacity: 1;
-  -webkit-transition: all ease .7s;
-  transition: all ease .7s; }
+  -webkit-transition: all ease 0.7s;
+  transition: all ease 0.7s; }
   .buttonside:hover {
     background-color: #fff;
     opacity: 1; }
   .buttonside:hover > span {
-    color: #000; }
+    color: #000;
+    -webkit-transition: all ease 0.7s;
+    transition: all ease 0.7s; }
 
 .carousel-control-prev {
   left: 6%; }
@@ -180,7 +208,7 @@ h2 {
   width: 725px;
   margin: 0 auto; }
 
-.articles {
+article {
   margin-bottom: 110px; }
 
 section {
@@ -197,19 +225,21 @@ section {
       color: #000; }
     section p a:hover {
       color: #545ad8; }
-    section p span {
+    section p .underlined {
       text-decoration: underline; }
 
-@media screen and (max-width: 1024px) {
-  h1 {
-    margin: 290px 0 30px;
-    font-size: 45px; }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .top {
+    padding-top: 80px; }
 
   h2::after {
     left: 48.7%; }
 
   .carousel-caption {
     bottom: 20%; }
+    .carousel-caption p:first-child {
+      margin: 290px auto 0;
+      font-size: 45px; }
 
   .frame {
     width: 100%; }
@@ -219,7 +249,7 @@ section {
   #carouselExampleControls .tablet-buttons {
     display: block;
     position: relative;
-    margin-bottom: 140px;
+    margin-bottom: 50px;
     text-align: center; }
     #carouselExampleControls .tablet-buttons .centered-buttons {
       width: 140px;
@@ -232,8 +262,8 @@ section {
         height: 50px;
         position: static;
         border-radius: 50%;
-        -webkit-transition: all ease .7s;
-        transition: all ease .7s;
+        -webkit-transition: all ease 0.7s;
+        transition: all ease 0.7s;
         border: 1px solid #646464;
         opacity: 1; }
         #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t span {
@@ -250,69 +280,268 @@ section {
 
   .maintext {
     width: 670px; } }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   nav {
-    height: 400px;
-    width: 320px;
-    position: fixed;
-    z-index: 10;
-    background-color: #fff; }
+    height: 64px;
+    width: 100%; }
+    nav .burger-button {
+      width: 18px;
+      height: 18px;
+      top: 23px;
+      left: 16px;
+      display: block; }
+      nav .burger-button .burger-part {
+        border: 2px solid #000;
+        height: 10px;
+        border-left: 0;
+        border-right: 0; }
+        nav .burger-button .burger-part:last-child {
+          border-top: 0;
+          height: 8px; }
     nav .logo-box {
-      display: inline-block;
-      padding: 13px 0;
-      position: relative;
+      padding: 5px 0;
       width: 100%; }
       nav .logo-box .image-box {
         display: block;
         text-align: center; }
-        nav .logo-box .image-box img {
-          width: 68px; }
       nav .logo-box span {
-        display: none; }
+        display: none;
+        text-align: center;
+        margin: 8px 0 0;
+        -webkit-transition: all ease 0.7s;
+        transition: all ease 0.7s; }
     nav .cross-button {
-      display: inline-block;
-      position: absolute;
-      font-size: 26px;
-      top: 28px;
-      right: 16px;
-      z-index: 15; }
+      display: none; }
+    nav ul {
+      float: none;
+      margin-top: 10px;
+      line-height: 20px;
+      position: relative;
+      text-align: center;
+      display: none;
+      -webkit-transition: all ease 0.7s;
+      transition: all ease 0.7s; }
+      nav ul li {
+        text-align: center;
+        margin: 0 10px; }
+        nav ul li:last-child {
+          margin-right: 10px; }
+
+  .top {
+    padding-top: 64px; }
+
+  .carousel-caption {
+    bottom: 20%; }
+    .carousel-caption p {
+      width: 330px;
+      font-size: 12px;
+      margin: 0 auto 14px; }
+      .carousel-caption p:first-child {
+        font-size: 30px;
+        margin: 4px auto 0; }
+    .carousel-caption .popup {
+      width: 100px;
+      height: 30px;
+      font-size: 11px; }
+
+  h2::after {
+    left: 48%; }
+
+  .maintext {
+    width: 98%; }
+
+  article {
+    margin-bottom: 70px; } }
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  nav {
+    height: 64px; }
+    nav .burger-button {
+      width: 15px;
+      height: 13px;
+      top: 24px;
+      left: 16px;
+      display: block; }
+      nav .burger-button .burger-part {
+        border: 1px solid #000;
+        height: 7px;
+        border-left: 0;
+        border-right: 0; }
+        nav .burger-button .burger-part:last-child {
+          border-top: 0;
+          height: 6px; }
+    nav .logo-box {
+      padding: 5px 0;
+      width: 100%; }
+      nav .logo-box .image-box {
+        display: block;
+        text-align: center; }
+      nav .logo-box span {
+        display: none;
+        text-align: center;
+        margin: 12px 0 0;
+        -webkit-transition: all ease 0.7s;
+        transition: all ease 0.7s; }
+    nav .cross-button {
+      font-size: 38px;
+      top: 4px; }
     nav ul {
       float: none;
       margin-top: 80px;
       line-height: 40px;
-      position: relative; }
+      position: relative;
+      text-align: center;
+      display: none;
+      -webkit-transition: all ease 0.7s;
+      transition: all ease 0.7s; }
       nav ul li {
-        display: block;
-        text-align: center; }
+        text-align: center;
+        margin: 0 10px; }
         nav ul li:last-child {
-          margin-right: 11px; }
+          margin-right: 10px; }
+
+  .top {
+    padding-top: 64px; }
+    .top .carousel-item {
+      overflow: hidden; }
+      .top .carousel-item img {
+        min-height: 460px;
+        min-width: 818px;
+        position: relative;
+        left: -70vw; }
 
   .carousel-caption {
-    bottom: -5%; }
+    bottom: 15%; }
     .carousel-caption p {
       width: 230px;
-      font-size: 8px;
+      font-size: 12px;
       margin: 0 auto 14px; }
-    .carousel-caption button {
-      width: 100px;
-      height: 30px;
-      font-size: 12px; }
-
-  h1 {
-    font-size: 30px;
-    margin: 4px 0; }
+      .carousel-caption p:first-child {
+        font-size: 25px;
+        margin: 34px auto 0; }
+    .carousel-caption .popup {
+      font-size: 16px; }
 
   .buttonside {
     display: none; }
 
-  .carousel-indicators li {
+  h2::after {
+    left: 45%; }
+
+  .rowmini img {
+    max-width: 99% !important;
+    display: none; }
+
+  #carouselExampleControls .carousel-item:first-child .rowmini img:first-child {
+    display: block; }
+  #carouselExampleControls .carousel-item:nth-child(2) .rowmini img:nth-child(2) {
+    display: block; }
+  #carouselExampleControls .carousel-item:last-child .rowmini img:last-child {
+    display: block; }
+  #carouselExampleControls .tablet-buttons {
+    margin-bottom: 20px; }
+
+  .maintext {
+    width: 98%; }
+
+  .articles {
+    margin-bottom: 70px; }
+
+  section {
+    color: #000; }
+    section h3 {
+      font-size: 14px;
+      margin: 35px 0; }
+    section p {
+      font-size: 14px; } }
+@media screen and (max-width: 320px) {
+  nav {
+    height: 64px; }
+    nav .burger-button {
+      width: 15px;
+      height: 13px;
+      top: 24px;
+      left: 16px;
+      display: block; }
+      nav .burger-button .burger-part {
+        border: 1px solid #000;
+        height: 7px;
+        border-left: 0;
+        border-right: 0; }
+        nav .burger-button .burger-part:last-child {
+          border-top: 0;
+          height: 6px; }
+    nav .logo-box {
+      padding: 5px 0;
+      width: 100%; }
+      nav .logo-box .image-box {
+        display: block;
+        text-align: center; }
+      nav .logo-box span {
+        display: none;
+        text-align: center;
+        margin: 12px 0 0;
+        -webkit-transition: all ease 0.7s;
+        transition: all ease 0.7s; }
+    nav .cross-button {
+      font-size: 38px;
+      top: 4px; }
+    nav ul {
+      float: none;
+      margin-top: 80px;
+      line-height: 40px;
+      position: relative;
+      text-align: center;
+      display: none;
+      -webkit-transition: all ease 0.7s;
+      transition: all ease 0.7s; }
+      nav ul li {
+        text-align: center;
+        margin: 0 10px; }
+        nav ul li:last-child {
+          margin-right: 10px; }
+
+  .top {
+    padding-top: 64px; }
+    .top .carousel-item {
+      overflow: hidden; }
+      .top .carousel-item img {
+        min-height: 460px;
+        min-width: 818px;
+        position: relative;
+        left: -70vw; }
+
+  .carousel-caption {
+    right: 10%;
+    left: 10%;
+    bottom: 25%; }
+    .carousel-caption p {
+      width: 215px;
+      font-size: 12px;
+      margin: 0 auto 14px; }
+      .carousel-caption p:first-child {
+        font-size: 25px;
+        margin: 34px auto 0; }
+    .carousel-caption .popup {
+      font-size: 16px; }
+
+  .buttonside {
     display: none; }
 
   h2::after {
-    left: 43%; }
+    left: 44%; }
 
-  #carouselExampleControls .tablet-buttons {
+  .rowmini img {
+    max-width: 99% !important;
     display: none; }
+
+  #carouselExampleControls .carousel-item:first-child .rowmini img:first-child {
+    display: block; }
+  #carouselExampleControls .carousel-item:nth-child(2) .rowmini img:nth-child(2) {
+    display: block; }
+  #carouselExampleControls .carousel-item:last-child .rowmini img:last-child {
+    display: block; }
+  #carouselExampleControls .tablet-buttons {
+    margin-bottom: 20px; }
 
   .maintext {
     width: 98%; }

@@ -1,81 +1,351 @@
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 481px) and (max-width : 767px) {
 	nav {
-		height: 400px;
-		width: 320px;
-		position: fixed;
-		z-index: 10;
-		background-color: #fff;
+		height: 64px;
+		width: 100%;
+		.burger-button {
+			width: 18px;
+			height: 18px;
+			top: 23px;
+			left: 16px;
+			display: block;
+			.burger-part {
+				border: 2px solid #000;
+				height: 10px;
+				border-left: 0;
+				border-right: 0;
+				&:last-child {
+					border-top: 0;
+					height: 8px;
+				}
+			}
+		}
 		.logo-box {
-			display: inline-block;
-			padding: 13px 0;
-			position: relative;
+			padding: 5px 0;
 			width: 100%;
 			.image-box {
 				display: block;
 				text-align: center;
-				img {
-					width: 68px;
-				}
 			}
 			span {
 				display: none;
+				text-align: center;
+				margin: 8px 0 0;
+				transition: $t;
 			}
 		}
 		.cross-button {
-			display: inline-block;
-			position: absolute;
-			font-size: 26px;
-			top: 28px;
-			right: 16px;
-			z-index: 15;
+			display: none;
+		}
+		ul {
+			float: none;
+			margin-top: 10px;
+			line-height: 20px;
+			position: relative;
+			text-align: center;
+			display: none;
+			transition: $t;
+			li {
+				text-align: center;
+				margin: 0 10px;
+				&:last-child {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.top {
+		padding-top: 64px;
+	}
+	.carousel-caption {
+		bottom: 20%;
+		p {
+			width: 330px;
+			font-size: 12px;
+			margin: 0 auto 14px;
+			&:first-child {
+				font-size: 30px;
+				margin: 4px auto 0;
+			}
+		}
+		.popup {
+			width: 100px;
+			height: 30px;
+			font-size: 11px;
+		}
+	}
+	h2 {
+		&::after {
+			left: 48%;
+		}
+	}
+	.maintext {
+		width: 98%;
+	}
+	article {
+		margin-bottom: 70px;
+	}
+}
+@media screen and (min-width: 321px) and (max-width : 480px) {
+	nav {
+		height: 64px;
+		.burger-button {
+			width: 15px;
+			height: 13px;
+			top: 24px;
+			left: 16px;
+			display: block;
+			.burger-part {
+				border: 1px solid #000;
+				height: 7px;
+				border-left: 0;
+				border-right: 0;
+				&:last-child {
+					border-top: 0;
+					height: 6px;
+				}
+			}
+		}
+		.logo-box {
+			padding: 5px 0;
+			width: 100%;
+			.image-box {
+				display: block;
+				text-align: center;
+			}
+			span {
+				display: none;
+				text-align: center;
+				margin: 12px 0 0;
+				transition: $t;
+			}
+		}
+		.cross-button {
+			font-size: 38px;
+			top: 4px;
 		}
 		ul {
 			float: none;
 			margin-top: 80px;
 			line-height: 40px;
 			position: relative;
+			text-align: center;
+			display: none;
+			transition: $t;
 			li {
-				display: block;
 				text-align: center;
+				margin: 0 10px;
 				&:last-child {
-					margin-right: 11px;
+					margin-right: 10px;
 				}
 			}
 		}
 	}
-	.carousel-caption {
-		bottom: -5%;
-		p {
-			width: 230px;
-			font-size: 8px;
-			margin: 0 auto 14px;
-		}
-		button {
-			width: 100px;
-			height: 30px;
-			font-size: 12px;
+	.top {
+		padding-top: 64px;
+		.carousel-item {
+			overflow: hidden;
+			img {
+				min-height: 460px;
+				min-width: 818px;
+				position: relative;
+				left: -70vw;
+			}
 		}
 	}
-	h1 {
-		font-size: 30px;
-		margin: 4px 0;
+	.carousel-caption {
+		bottom: 15%;
+		p {
+			width: 230px;
+			font-size: 12px;
+			margin: 0 auto 14px;
+			&:first-child {
+				font-size: 25px;
+				margin: 34px auto 0;
+			}
+		}
+		.popup {
+			font-size: 16px;
+		}
 	}
 	.buttonside {
 		display: none;
 	}
-	.carousel-indicators {
-		li {
-			display: none;
-		}
-	}
 	h2 {
 		&::after {
-			left: 43%;
+			left: 45%;
+		}
+	}
+	.rowmini {
+		img {
+			max-width: 99% !important;
+			display: none;
 		}
 	}
 	#carouselExampleControls {
+		.carousel-item:first-child {
+				.rowmini {
+					img:first-child {
+					display: block;
+				}
+			}
+		}
+		.carousel-item:nth-child(2) {
+				.rowmini {
+					img:nth-child(2) {
+					display: block;
+				}
+			}
+		}
+		.carousel-item:last-child {
+				.rowmini {
+					img:last-child {
+					display: block;
+				}
+			}
+		}
 		.tablet-buttons {
+			margin-bottom: 20px;
+		}
+	}
+	.maintext {
+		width: 98%;
+	}
+	.articles {
+		margin-bottom: 70px;
+	}
+	section {
+		color: #000;
+		h3 {
+			font-size: 14px;
+			margin: 35px 0;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
+@media screen and (max-width: 320px) {
+	nav {
+		height: 64px;
+		.burger-button {
+			width: 15px;
+			height: 13px;
+			top: 24px;
+			left: 16px;
+			display: block;
+			.burger-part {
+				border: 1px solid #000;
+				height: 7px;
+				border-left: 0;
+				border-right: 0;
+				&:last-child {
+					border-top: 0;
+					height: 6px;
+				}
+			}
+		}
+		.logo-box {
+			padding: 5px 0;
+			width: 100%;
+			.image-box {
+				display: block;
+				text-align: center;
+			}
+			span {
+				display: none;
+				text-align: center;
+				margin: 12px 0 0;
+				transition: $t;
+			}
+		}
+		.cross-button {
+			font-size: 38px;
+			top: 4px;
+		}
+		ul {
+			float: none;
+			margin-top: 80px;
+			line-height: 40px;
+			position: relative;
+			text-align: center;
 			display: none;
+			transition: $t;
+			li {
+				text-align: center;
+				margin: 0 10px;
+				&:last-child {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.top {
+		padding-top: 64px;
+		.carousel-item {
+			overflow: hidden;
+			img {
+				min-height: 460px;
+				min-width: 818px;
+				position: relative;
+				left: -70vw;
+			}
+		}
+	}
+	.carousel-caption {
+		right: 10%;
+		left: 10%;
+		bottom: 25%;
+		p {
+			width: 215px;
+			font-size: 12px;
+			margin: 0 auto 14px;
+			&:first-child {
+				font-size: 25px;
+				margin: 34px auto 0;
+			}
+		}
+		.popup {
+			font-size: 16px;
+		}
+	}
+	.buttonside {
+		display: none;
+	}
+	h2 {
+		&::after {
+			left: 44%;
+		}
+	}
+	.rowmini {
+		img {
+			max-width: 99% !important;
+			display: none;
+		}
+	}
+	#carouselExampleControls {
+		.carousel-item:first-child {
+				.rowmini {
+					img:first-child {
+					display: block;
+				}
+			}
+		}
+		.carousel-item:nth-child(2) {
+				.rowmini {
+					img:nth-child(2) {
+					display: block;
+				}
+			}
+		}
+		.carousel-item:last-child {
+				.rowmini {
+					img:last-child {
+					display: block;
+				}
+			}
+		}
+		.tablet-buttons {
+			margin-bottom: 20px;
 		}
 	}
 	.maintext {

@@ -23,12 +23,15 @@
 		font-weight: normal;
 }
 $fb : "GothamProBold", sans-serif;
+// $fr : "GothamProRegular", sans-serif;
+$t : all ease .7s;
 nav {
 	height: 80px;
 	width: 100%;
 	position: fixed;
 	z-index: 30;
 	background-color: #fff;
+	transition: $t;
 	.logo-box {
 		display: inline-block;
 		padding: 13px 0;
@@ -50,7 +53,15 @@ nav {
 		}
 	}
 	.cross-button {
+		position: absolute;
+		font-size: 44px;
+		top: 20px;
+		right: 16px;
+		z-index: 15;
+		transform: rotate(45deg);
+		cursor: pointer;
 		display: none;
+		transition: $t;
 	}
 	ul {
 		float: right;
@@ -76,6 +87,16 @@ nav {
 			}
 		}
 	}
+	.burger-button {
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		z-index: 15;
+		top: 23px;
+		left: 16px;
+		display: none;
+		cursor: pointer;
+	}
 }
 .sect {
 	position: relative;
@@ -91,8 +112,12 @@ nav {
 		width: 400px;
 		font-size: 14px;
 		margin: 0 auto 34px;
+		&:first-child {
+			font-family: $fb;
+			font-size: 75px;
+		}
 	}
-	button {
+	.popup {
 		margin: 0 auto;
 		width: 170px;
 		height: 50px;
@@ -101,13 +126,16 @@ nav {
 		font-family: $fb;
 		font-size: 16px;
 		color: #fff;
+		background-color: #646464;
 		cursor: pointer;
 		text-transform: uppercase;
+		text-decoration: none;
+		display: block;
+		line-height: 50px;
+		&:focus {
+			outline: none;
+		}
 	}
-}
-h1 {
-	font-family: $fb;
-	font-size: 75px;
 }
 .buttonside {
 	width: 50px;
@@ -117,13 +145,14 @@ h1 {
 	border-radius: 50%;
 	top: 47%;
 	opacity: 1;
-	transition: all ease .7s;
+	transition: $t;
 	&:hover {
 		background-color: #fff;
 		opacity: 1;
 	}
 	&:hover > span {
 		color: #000;
+		transition: $t;
 	}
 }
 .carousel-control-prev {
@@ -193,7 +222,6 @@ h2 {
 		left: 49%;
 	}
 }
-
 .frame {
 	width: 82%;
 	margin: 0 auto;
@@ -218,7 +246,7 @@ h2 {
 	width: 725px;
 	margin: 0 auto;
 }
-.articles {
+article {
 	margin-bottom: 110px;
 }
 section {
@@ -238,7 +266,7 @@ section {
 		a:hover {
 			color: #545ad8;
 		}
-		span {
+		.underlined {
 			text-decoration: underline;
 		}
 	}

@@ -1,7 +1,6 @@
-@media screen and (max-width: 1024px) {
-	h1 {
-		margin: 290px 0 30px;
-		font-size: 45px;
+@media screen and (min-width: 768px) and (max-width : 1023px) {
+	.top {
+		padding-top: 80px;
 	}
 	h2 {
 		&::after {
@@ -10,6 +9,12 @@
 	}
 	.carousel-caption {
 		bottom: 20%;
+		p {
+			&:first-child {
+				margin: 290px auto 0;
+				font-size: 45px;
+			}
+		}
 	}
 	.frame {
 		width: 100%;
@@ -21,7 +26,7 @@
 		.tablet-buttons {
 			display: block;
 			position: relative;
-			margin-bottom: 140px;
+			margin-bottom: 50px;
 			text-align: center;
 			.centered-buttons {
 				width: 140px;
@@ -34,7 +39,7 @@
 					height: 50px;
 					position: static;
 					border-radius: 50%;
-					transition: all ease .7s;
+					transition: $t;
 					border: 1px solid #646464;
 					opacity: 1;
 					span {
