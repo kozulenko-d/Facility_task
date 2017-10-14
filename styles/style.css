@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "GothamProRegular", sans-serif; }
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  background-color: #fff; }
+  nav .logo-box {
+    display: inline-block;
+    padding: 13px 0;
+    position: relative; }
+    nav .logo-box .image-box {
+      display: inline-block; }
+      nav .logo-box .image-box img {
+        width: 68px; }
+    nav .logo-box span {
+      text-transform: uppercase;
+      font-family: "GothamProBold", sans-serif;
+      font-size: 18px;
+      color: #646464;
+      margin-left: 25px;
+      position: relative;
+      top: 2px; }
+  nav .cross-button {
+    display: none; }
+  nav ul {
+    float: right;
+    font-size: 0;
+    line-height: 80px;
+    margin-bottom: 0; }
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      font-weight: normal;
+      margin: 0 11px; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #646464; }
+        nav ul li a:hover {
+          text-decoration: none;
+          color: #545ad8; }
+
+.sect {
+  position: relative; }
+  .sect a:first-child {
+    position: absolute;
+    top: -80px; }
+
+.carousel-caption {
+  bottom: 26%;
+  text-transform: uppercase; }
+  .carousel-caption p {
+    width: 400px;
+    font-size: 14px;
+    margin: 0 auto 34px; }
+  .carousel-caption button {
+    margin: 0 auto;
+    width: 170px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 18px;
+    font-family: "GothamProBold", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; }
+
+h1 {
+  font-family: "GothamProBold", sans-serif;
+  font-size: 75px; }
+
+.buttonside {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: 47%;
+  opacity: 1;
+  -webkit-transition: all ease .7s;
+  transition: all ease .7s; }
+  .buttonside:hover {
+    background-color: #fff;
+    opacity: 1; }
+  .buttonside:hover > span {
+    color: #000; }
+
+.carousel-control-prev {
+  left: 6%; }
+  .carousel-control-prev span {
+    -webkit-transform: scale(2.4, 1.8) translate(-1px, 1px);
+            transform: scale(2.4, 1.8) translate(-1px, 1px); }
+
+.carousel-control-next {
+  right: 6%; }
+  .carousel-control-next span {
+    -webkit-transform: scale(2.4, 1.8) translate(1px, 1px);
+            transform: scale(2.4, 1.8) translate(1px, 1px); }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 1;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #fff; }
+  .carousel-indicators li.active {
+    background-color: #646464; }
+
+#carouselExampleControls .buttonside {
+  border: 1px solid #646464;
+  border-radius: 50%;
+  top: 47%;
+  opacity: 1; }
+  #carouselExampleControls .buttonside span {
+    color: #646464; }
+  #carouselExampleControls .buttonside:hover {
+    background-color: #646464;
+    opacity: 1; }
+  #carouselExampleControls .buttonside:hover > span {
+    color: #fff; }
+#carouselExampleControls .tablet-buttons {
+  display: none; }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "GothamProBold", sans-serif;
+  font-size: 24px;
+  color: #646464;
+  margin: 40px 0 32px;
+  position: relative; }
+  h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #646464;
+    bottom: -5px;
+    left: 49%; }
+
+.frame {
+  width: 82%;
+  margin: 0 auto; }
+  .frame .rowmini img {
+    height: 17%; }
+  .frame .row .colbox {
+    color: #646464;
+    margin-bottom: 30px; }
+    .frame .row .colbox p:first-child {
+      font-family: "GothamProBold", sans-serif;
+      font-size: 18px;
+      margin-bottom: 20px; }
+
+.maintext {
+  width: 725px;
+  margin: 0 auto; }
+
+.articles {
+  margin-bottom: 110px; }
+
+section {
+  color: #646464; }
+  section h3 {
+    font-family: "GothamProBold", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 40px 0; }
+  section p {
+    font-size: 16px; }
+    section p strong {
+      font-family: "GothamProBold", sans-serif;
+      color: #000; }
+    section p a:hover {
+      color: #545ad8; }
+    section p span {
+      text-decoration: underline; }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    margin: 290px 0 30px;
+    font-size: 45px; }
+
+  h2::after {
+    left: 48.7%; }
+
+  .carousel-caption {
+    bottom: 20%; }
+
+  .frame {
+    width: 100%; }
+
+  #carouselExampleControls .buttonside {
+    display: none; }
+  #carouselExampleControls .tablet-buttons {
+    display: block;
+    position: relative;
+    margin-bottom: 140px;
+    text-align: center; }
+    #carouselExampleControls .tablet-buttons .centered-buttons {
+      width: 140px;
+      display: inline-block;
+      min-height: 23px;
+      position: relative;
+      margin-top: 35px; }
+      #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t {
+        width: 50px;
+        height: 50px;
+        position: static;
+        border-radius: 50%;
+        -webkit-transition: all ease .7s;
+        transition: all ease .7s;
+        border: 1px solid #646464;
+        opacity: 1; }
+        #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t span {
+          color: #646464; }
+        #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover {
+          background-color: #646464;
+          opacity: 1; }
+        #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover > span {
+          color: #fff; }
+      #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-prev {
+        float: left; }
+      #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-next {
+        float: right; }
+
+  .maintext {
+    width: 670px; } }
+@media screen and (max-width: 320px) {
+  nav {
+    height: 400px;
+    width: 320px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff; }
+    nav .logo-box {
+      display: inline-block;
+      padding: 13px 0;
+      position: relative;
+      width: 100%; }
+      nav .logo-box .image-box {
+        display: block;
+        text-align: center; }
+        nav .logo-box .image-box img {
+          width: 68px; }
+      nav .logo-box span {
+        display: none; }
+    nav .cross-button {
+      display: inline-block;
+      position: absolute;
+      font-size: 26px;
+      top: 28px;
+      right: 16px;
+      z-index: 15; }
+    nav ul {
+      float: none;
+      margin-top: 80px;
+      line-height: 40px;
+      position: relative; }
+      nav ul li {
+        display: block;
+        text-align: center; }
+        nav ul li:last-child {
+          margin-right: 11px; }
+
+  .carousel-caption {
+    bottom: -5%; }
+    .carousel-caption p {
+      width: 230px;
+      font-size: 8px;
+      margin: 0 auto 14px; }
+    .carousel-caption button {
+      width: 100px;
+      height: 30px;
+      font-size: 12px; }
+
+  h1 {
+    font-size: 30px;
+    margin: 4px 0; }
+
+  .buttonside {
+    display: none; }
+
+  .carousel-indicators li {
+    display: none; }
+
+  h2::after {
+    left: 43%; }
+
+  #carouselExampleControls .tablet-buttons {
+    display: none; }
+
+  .maintext {
+    width: 98%; }
+
+  .articles {
+    margin-bottom: 70px; }
+
+  section {
+    color: #000; }
+    section h3 {
+      font-size: 14px;
+      margin: 35px 0; }
+    section p {
+      font-size: 14px; } }

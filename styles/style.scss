@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "GothamProRegular", sans-serif;
+}
+@font-face {
+		font-family: "GothamProRegular";
+		src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+		src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+		url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+		font-family: "GothamProBold";
+		src: url("../fonts/GothamProBold/GothamProBold.eot");
+		src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+		url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+$fb : "GothamProBold", sans-serif;
+nav {
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 30;
+	background-color: #fff;
+	.logo-box {
+		display: inline-block;
+		padding: 13px 0;
+		position: relative;
+		.image-box {
+			display: inline-block;
+			img {
+				width: 68px;
+			}
+		}
+		span {
+			text-transform: uppercase;
+			font-family: $fb;
+			font-size: 18px;
+			color: #646464;
+			margin-left: 25px;
+			position: relative;
+			top: 2px;
+		}
+	}
+	.cross-button {
+		display: none;
+	}
+	ul {
+		float: right;
+		font-size: 0;
+		line-height: 80px;
+		margin-bottom: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			font-weight: normal;
+			margin: 0 11px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #646464;
+				&:hover {
+					text-decoration: none;
+					color: #545ad8;
+				}
+			}
+		}
+	}
+}
+.sect {
+	position: relative;
+	a:first-child {
+		position: absolute;
+		top: -80px;
+	}
+}
+.carousel-caption {
+	bottom: 26%;
+	text-transform: uppercase;
+	p {
+		width: 400px;
+		font-size: 14px;
+		margin: 0 auto 34px;
+	}
+	button {
+		margin: 0 auto;
+		width: 170px;
+		height: 50px;
+		border: 1px solid #fff;
+		border-radius: 18px;
+		font-family: $fb;
+		font-size: 16px;
+		color: #fff;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+}
+h1 {
+	font-family: $fb;
+	font-size: 75px;
+}
+.buttonside {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	top: 47%;
+	opacity: 1;
+	transition: all ease .7s;
+	&:hover {
+		background-color: #fff;
+		opacity: 1;
+	}
+	&:hover > span {
+		color: #000;
+	}
+}
+.carousel-control-prev {
+	left: 6%;
+	span {
+		transform: scale(2.4, 1.8) translate(-1px, 1px);
+	}
+}
+.carousel-control-next {
+	right: 6%;
+	span {
+		transform: scale(2.4, 1.8) translate(1px, 1px);
+	}
+}
+.carousel-indicators {
+	li {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		opacity: 1;
+		cursor: pointer;
+		border: 1px solid #fff;
+		background-color: #fff;
+		&.active {
+			background-color: #646464;
+		}
+	}
+}
+#carouselExampleControls {
+	.buttonside {
+		border: 1px solid #646464;
+		border-radius: 50%;
+		top: 47%;
+		opacity: 1;
+		span {
+			color: #646464;
+		}
+		&:hover {
+			background-color: #646464;
+			opacity: 1;
+		}
+		&:hover > span {
+			color: #fff;
+		}
+	}
+	.tablet-buttons {
+		display: none;
+	}
+}
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: $fb;
+	font-size: 24px;
+	color: #646464;
+	margin: 40px 0 32px;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 2px;
+		background-color: #646464;
+		bottom: -5px;
+		left: 49%;
+	}
+}
+
+.frame {
+	width: 82%;
+	margin: 0 auto;
+	.rowmini {
+		img {
+			height: 17%;
+		}
+	}
+	.row {
+		.colbox {
+			color: #646464;
+			margin-bottom: 30px;
+			p:first-child {
+				font-family: $fb;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+.maintext {
+	width: 725px;
+	margin: 0 auto;
+}
+.articles {
+	margin-bottom: 110px;
+}
+section {
+	color: #646464;
+	h3 {
+		font-family: $fb;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin: 40px 0;
+	}
+	p {
+		font-size: 16px;
+		strong {
+			font-family: $fb;
+			color: #000;
+		}
+		a:hover {
+			color: #545ad8;
+		}
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+@import 'tab';
+@import 'mob';

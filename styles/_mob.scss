@@ -1,0 +1,97 @@
+@media screen and (max-width: 320px) {
+	nav {
+		height: 400px;
+		width: 320px;
+		position: fixed;
+		z-index: 10;
+		background-color: #fff;
+		.logo-box {
+			display: inline-block;
+			padding: 13px 0;
+			position: relative;
+			width: 100%;
+			.image-box {
+				display: block;
+				text-align: center;
+				img {
+					width: 68px;
+				}
+			}
+			span {
+				display: none;
+			}
+		}
+		.cross-button {
+			display: inline-block;
+			position: absolute;
+			font-size: 26px;
+			top: 28px;
+			right: 16px;
+			z-index: 15;
+		}
+		ul {
+			float: none;
+			margin-top: 80px;
+			line-height: 40px;
+			position: relative;
+			li {
+				display: block;
+				text-align: center;
+				&:last-child {
+					margin-right: 11px;
+				}
+			}
+		}
+	}
+	.carousel-caption {
+		bottom: -5%;
+		p {
+			width: 230px;
+			font-size: 8px;
+			margin: 0 auto 14px;
+		}
+		button {
+			width: 100px;
+			height: 30px;
+			font-size: 12px;
+		}
+	}
+	h1 {
+		font-size: 30px;
+		margin: 4px 0;
+	}
+	.buttonside {
+		display: none;
+	}
+	.carousel-indicators {
+		li {
+			display: none;
+		}
+	}
+	h2 {
+		&::after {
+			left: 43%;
+		}
+	}
+	#carouselExampleControls {
+		.tablet-buttons {
+			display: none;
+		}
+	}
+	.maintext {
+		width: 98%;
+	}
+	.articles {
+		margin-bottom: 70px;
+	}
+	section {
+		color: #000;
+		h3 {
+			font-size: 14px;
+			margin: 35px 0;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
