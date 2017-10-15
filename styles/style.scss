@@ -98,6 +98,82 @@ nav {
 		animation-duration: 1s;
 	}
 }
+.popup-body {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+	.popup-box {
+		width: 570px;
+		height: 330px;
+		margin: 12% auto 0;
+		background-color: #fff;
+		position: relative;
+		z-index: 110;
+		.popup-content {
+			position: relative;
+			p {
+				font-family: $fb;
+				font-size: 18px;
+				color: #646464;
+				text-align: center;
+				padding-top: 105px;
+				margin-bottom: 50px;
+			}
+			form {
+				display: none;
+				text-align: center;
+				input {
+					display: block;
+					width: 300px;
+					height: 50px;
+					border: 1px solid #646464;
+					border-radius: 8px;
+					&:focus {
+						outline: none;
+					}
+				}
+				span {
+					color: red;
+					font-size: 11px;
+					margin-top: -15px;
+					display: none;
+				}
+				button {
+					display: block;
+					margin-top: 20px;
+					cursor: pointer;
+				}
+			}
+			button {
+				width: 168px;
+				height: 48px;
+				background-color: #646464;
+				color: #fff;
+				text-transform: uppercase;
+				font-family: $fb;
+				font-size: 16px;
+				border-radius: 18px;
+				border: 0;
+				display: block;
+				margin: 0 auto;
+			}
+			.popup-cross {
+				transform: rotate(45deg);
+				position: absolute;
+				color: #000;
+				font-size: 36px;
+				top: 2px;
+				right: 17px;
+				cursor: pointer;
+			}
+		}
+	}
+}
 .top {
 	.carousel-item {
 		background-color: #000;
@@ -123,7 +199,7 @@ nav {
 			margin: 0 auto;
 		}
 	}
-	.popup {
+	.popup-button {
 		margin: 0 auto;
 		width: 170px;
 		height: 50px;

@@ -50,6 +50,28 @@
 			}
 		}
 	}
+	.popup-body {
+		.popup-box {
+			width: 480px;
+			.popup-content {
+				p {
+					padding-top: 40px;
+					margin-bottom: 45px;
+				}
+				form {
+					display: block;
+					margin-top: 45px;
+					input {
+						text-align: center;
+						margin: 0 auto 18px;
+					}
+				}
+				button {
+					display: none;
+				}
+			}
+		}
+	}
 	.top {
 		padding-top: 64px;
 	}
@@ -146,6 +168,29 @@
 			}
 		}
 	}
+	.popup-body {
+		.popup-box {
+			width: 100%;
+			.popup-content {
+				p {
+					padding-top: 40px;
+					margin-bottom: 45px;
+				}
+				form {
+					display: block;
+					margin-top: 45px;
+					input {
+						text-align: center;
+						margin: 0 auto 18px;
+						width: 94%;
+					}
+				}
+				button {
+					display: none;
+				}
+			}
+		}
+	}
 	.top {
 		padding-top: 64px;
 		.carousel-item {
@@ -169,7 +214,7 @@
 				margin: 34px auto 0;
 			}
 		}
-		.popup {
+		.popup-button {
 			font-size: 16px;
 		}
 	}
@@ -290,6 +335,29 @@
 			}
 		}
 	}
+	.popup-body {
+		.popup-box {
+			width: 100%;
+			.popup-content {
+				p {
+					padding-top: 40px;
+					margin-bottom: 45px;
+				}
+				form {
+					display: block;
+					margin-top: 45px;
+					input {
+						text-align: center;
+						margin: 0 auto 18px;
+						width: 94%;
+					}
+				}
+				button {
+					display: none;
+				}
+			}
+		}
+	}
 	.top {
 		padding-top: 64px;
 		.carousel-item {
@@ -315,7 +383,7 @@
 				margin: 34px auto 0;
 			}
 		}
-		.popup {
+		.popup-button {
 			font-size: 16px;
 		}
 	}
