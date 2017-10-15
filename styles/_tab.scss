@@ -25,41 +25,41 @@
 		}
 		.tablet-buttons {
 			display: block;
-			position: relative;
-			margin-bottom: 50px;
-			text-align: center;
-			.centered-buttons {
-				width: 140px;
-				display: inline-block;
-				min-height: 23px;
-				position: relative;
-				margin-top: 35px;
-				.buttonside-t {
-					width: 50px;
-					height: 50px;
-					position: static;
-					border-radius: 50%;
-					transition: $t;
-					border: 1px solid #646464;
-					opacity: 1;
-					span {
-						color: #646464;
-					}
-					&:hover {
-						background-color: #646464;
-						opacity: 1;
-					}
-					&:hover > span {
-						color: #fff;
-					}
-				}
-				.carousel-control-prev {
-					float: left;
-				}
-				.carousel-control-next {
-					float: right;
-				}
-			}
+			// position: relative;
+			// margin-bottom: 50px;
+			// text-align: center;
+			// .centered-buttons {
+			// 	width: 140px;
+			// 	display: inline-block;
+			// 	min-height: 23px;
+			// 	position: relative;
+			// 	margin-top: 35px;
+			// 	.buttonside-t {
+			// 		width: 50px;
+			// 		height: 50px;
+			// 		position: static;
+			// 		border-radius: 50%;
+			// 		transition: $t;
+			// 		border: 1px solid #646464;
+			// 		opacity: 1;
+			// 		span {
+			// 			color: #646464;
+			// 		}
+			// 		&:hover {
+			// 			background-color: #646464;
+			// 			opacity: 1;
+			// 		}
+			// 		&:hover > span {
+			// 			color: #fff;
+			// 		}
+			// 	}
+			// 	.carousel-control-prev {
+			// 		float: left;
+			// 	}
+			// 	.carousel-control-next {
+			// 		float: right;
+			// 	}
+			// }
 		}
 	}
 	.maintext {

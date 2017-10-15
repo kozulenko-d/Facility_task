@@ -57,7 +57,7 @@
 		padding-top: 64px;
 	}
 	.carousel-caption {
-		bottom: 20%;
+		bottom: 15%;
 		p {
 			width: 330px;
 			font-size: 12px;
@@ -67,10 +67,19 @@
 				margin: 4px auto 0;
 			}
 		}
-		.popup {
-			width: 100px;
-			height: 30px;
-			font-size: 11px;
+	}
+	#carouselExampleControls {
+		.container {
+			max-width: 660px;
+			.frame {
+				width: 100%;
+			}
+		}
+		.buttonside {
+			display: none;
+		}
+		.tablet-buttons {
+			display: block;
 		}
 	}
 	h2 {
@@ -167,8 +176,13 @@
 			font-size: 16px;
 		}
 	}
-	.buttonside {
-		display: none;
+	#carouselExampleControls {
+		.buttonside {
+			display: none;
+		}
+		.tablet-buttons {
+			display: block;
+		}
 	}
 	h2 {
 		&::after {

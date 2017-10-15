@@ -89,9 +89,6 @@ nav {
 
 .sect {
   position: relative; }
-  .sect a:first-child {
-    position: absolute;
-    top: -80px; }
 
 .carousel-caption {
   bottom: 26%;
@@ -177,7 +174,36 @@ nav {
   #carouselExampleControls .buttonside:hover > span {
     color: #fff; }
 #carouselExampleControls .tablet-buttons {
-  display: none; }
+  display: none;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center; }
+  #carouselExampleControls .tablet-buttons .centered-buttons {
+    width: 140px;
+    display: inline-block;
+    min-height: 23px;
+    position: relative;
+    margin-top: 35px; }
+    #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t {
+      width: 50px;
+      height: 50px;
+      position: static;
+      border-radius: 50%;
+      -webkit-transition: all ease 0.7s;
+      transition: all ease 0.7s;
+      border: 1px solid #646464;
+      opacity: 1; }
+      #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t span {
+        color: #646464; }
+      #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover {
+        background-color: #646464;
+        opacity: 1; }
+      #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover > span {
+        color: #fff; }
+    #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-prev {
+      float: left; }
+    #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-next {
+      float: right; }
 
 h2 {
   text-transform: uppercase;
@@ -254,36 +280,7 @@ section {
   #carouselExampleControls .buttonside {
     display: none; }
   #carouselExampleControls .tablet-buttons {
-    display: block;
-    position: relative;
-    margin-bottom: 50px;
-    text-align: center; }
-    #carouselExampleControls .tablet-buttons .centered-buttons {
-      width: 140px;
-      display: inline-block;
-      min-height: 23px;
-      position: relative;
-      margin-top: 35px; }
-      #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t {
-        width: 50px;
-        height: 50px;
-        position: static;
-        border-radius: 50%;
-        -webkit-transition: all ease 0.7s;
-        transition: all ease 0.7s;
-        border: 1px solid #646464;
-        opacity: 1; }
-        #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t span {
-          color: #646464; }
-        #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover {
-          background-color: #646464;
-          opacity: 1; }
-        #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover > span {
-          color: #fff; }
-      #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-prev {
-        float: left; }
-      #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-next {
-        float: right; }
+    display: block; }
 
   .maintext {
     width: 670px; } }
@@ -338,7 +335,7 @@ section {
     padding-top: 64px; }
 
   .carousel-caption {
-    bottom: 20%; }
+    bottom: 15%; }
     .carousel-caption p {
       width: 330px;
       font-size: 12px;
@@ -346,10 +343,15 @@ section {
       .carousel-caption p:first-child {
         font-size: 30px;
         margin: 4px auto 0; }
-    .carousel-caption .popup {
-      width: 100px;
-      height: 30px;
-      font-size: 11px; }
+
+  #carouselExampleControls .container {
+    max-width: 660px; }
+    #carouselExampleControls .container .frame {
+      width: 100%; }
+  #carouselExampleControls .buttonside {
+    display: none; }
+  #carouselExampleControls .tablet-buttons {
+    display: block; }
 
   h2::after {
     left: 48%; }
@@ -428,8 +430,10 @@ section {
     .carousel-caption .popup {
       font-size: 16px; }
 
-  .buttonside {
+  #carouselExampleControls .buttonside {
     display: none; }
+  #carouselExampleControls .tablet-buttons {
+    display: block; }
 
   h2::after {
     left: 45%; }
