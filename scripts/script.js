@@ -6,17 +6,15 @@ window.onload = function() {
 
 	if (document.body.clientWidth >= 481 && document.body.clientWidth <= 767) {
 		burg.onclick = function() {
-			burg.style.display = 'none';
-			cross.style.display = 'inline-block';
-			cross.style.transform = 'rotate(225deg)';
+			burg.style.animationName = 'hideBurger';
+			cross.style.animationName = 'showCross';
 			document.querySelector('.logo-box').querySelector('span').style.display = 'block';
 			nav.querySelector('ul').style.display = 'block';
 			nav.style.height = '135px';
 		}
 		cross.onclick = function() {
-			burg.style.display = 'block';
-			cross.style.display = 'none';
-			cross.style.transform = 'rotate(45deg)';
+			burg.style.animationName = 'showBurger';
+			cross.style.animationName = 'hideCross';
 			document.querySelector('.logo-box').querySelector('span').style.display = 'none';
 			nav.querySelector('ul').style.display = 'none';
 			nav.style.height = '64px';
@@ -24,8 +22,8 @@ window.onload = function() {
 	}
 	if (document.body.clientWidth <= 480) {
 		burg.onclick = function() {
-			burg.style.display = 'none';
-			cross.style.display = 'inline-block';
+			burg.style.animationName = 'hideBurger';
+			cross.style.animationName = 'showCross';
 			document.querySelector('.image-box').querySelector('img').style.display = 'none';
 			document.querySelector('.logo-box').querySelector('span').style.display = 'block';
 			nav.querySelector('ul').style.display = 'block';
@@ -35,8 +33,8 @@ window.onload = function() {
 			nav.style.height = '100vh';
 		}
 		cross.onclick = function() {
-			burg.style.display = 'block';
-			cross.style.display = 'none';
+			burg.style.animationName = 'showBurger';
+			cross.style.animationName = 'hideCross';
 			document.querySelector('.image-box').querySelector('img').style.display = 'inline-block';
 			document.querySelector('.logo-box').querySelector('span').style.display = 'none';
 			nav.querySelector('ul').style.display = 'none';

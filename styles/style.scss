@@ -55,12 +55,12 @@ nav {
 		position: absolute;
 		font-size: 44px;
 		top: 20px;
-		right: 16px;
+		right: -136px;
 		z-index: 15;
 		transform: rotate(45deg);
 		cursor: pointer;
-		display: none;
-		transition: $t;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
 	}
 	ul {
 		float: right;
@@ -92,9 +92,10 @@ nav {
 		position: absolute;
 		z-index: 15;
 		top: 23px;
-		left: 16px;
-		display: none;
+		left: -136px;
 		cursor: pointer;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
 	}
 }
 .top {
@@ -309,6 +310,49 @@ section {
 		.underlined {
 			text-decoration: underline;
 		}
+	}
+}
+@keyframes hideBurger {
+	0% {
+		transform: skew(0deg);
+	}
+	5% {
+		transform: skew(-45deg);
+	}
+	100% {
+		left: -136px;
+	}
+}
+@keyframes showCross {
+	0%{
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(-495deg);
+		right: 16px;
+	}
+}
+@keyframes showBurger {
+	0% {
+		left: -136px;
+	}
+	67% {
+		left: -36px;
+		transform: skew(-45deg);
+	}
+	100% {
+		left: 16px;
+		transform: skew(0deg);
+	}
+}
+@keyframes hideCross {
+	0%{
+		transform: rotate(-495deg);
+		right: 16px;
+	}
+	100% {
+		transform: rotate(45deg);
+		right: -136px;
 	}
 }
 @import 'tab';
