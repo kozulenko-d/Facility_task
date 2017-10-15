@@ -159,25 +159,27 @@ nav .burger-button {
   height: 50px;
   border: 1px solid #646464;
   border-radius: 8px;
+  text-align: center;
+  margin: 0 auto 18px;
 }
-/* line 136, style.scss */
+/* line 138, style.scss */
 .popup-body .popup-box .popup-content form input:focus {
   outline: none;
 }
-/* line 140, style.scss */
+/* line 142, style.scss */
 .popup-body .popup-box .popup-content form span {
   color: red;
   font-size: 11px;
   margin-top: -15px;
   display: none;
 }
-/* line 146, style.scss */
+/* line 148, style.scss */
 .popup-body .popup-box .popup-content form button {
   display: block;
   margin-top: 20px;
   cursor: pointer;
 }
-/* line 152, style.scss */
+/* line 154, style.scss */
 .popup-body .popup-box .popup-content button {
   width: 168px;
   height: 48px;
@@ -191,7 +193,7 @@ nav .burger-button {
   display: block;
   margin: 0 auto;
 }
-/* line 165, style.scss */
+/* line 167, style.scss */
 .popup-body .popup-box .popup-content .popup-cross {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -203,39 +205,39 @@ nav .burger-button {
   cursor: pointer;
 }
 
-/* line 178, style.scss */
+/* line 180, style.scss */
 .top .carousel-item {
   background-color: #000;
 }
-/* line 180, style.scss */
+/* line 182, style.scss */
 .top .carousel-item img {
   opacity: 0.5;
 }
 
-/* line 185, style.scss */
+/* line 187, style.scss */
 .sect {
   position: relative;
 }
 
-/* line 188, style.scss */
+/* line 190, style.scss */
 .carousel-caption {
   bottom: 26%;
   text-transform: uppercase;
 }
-/* line 191, style.scss */
+/* line 193, style.scss */
 .carousel-caption p {
   width: 400px;
   font-size: 14px;
   margin: 0 auto 34px;
 }
-/* line 195, style.scss */
+/* line 197, style.scss */
 .carousel-caption p:first-child {
   font-family: "GothamProBold", sans-serif;
   font-size: 75px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 202, style.scss */
+/* line 204, style.scss */
 .carousel-caption .popup-button {
   margin: 0 auto;
   width: 170px;
@@ -252,12 +254,12 @@ nav .burger-button {
   display: block;
   line-height: 50px;
 }
-/* line 217, style.scss */
+/* line 219, style.scss */
 .carousel-caption .popup-button:focus {
   outline: none;
 }
 
-/* line 222, style.scss */
+/* line 224, style.scss */
 .buttonside {
   width: 50px;
   height: 50px;
@@ -269,39 +271,39 @@ nav .burger-button {
   -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s;
 }
-/* line 231, style.scss */
+/* line 233, style.scss */
 .buttonside:hover {
   background-color: #fff;
   opacity: 1;
 }
-/* line 235, style.scss */
+/* line 237, style.scss */
 .buttonside:hover > span {
   color: #000;
   -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s;
 }
 
-/* line 240, style.scss */
+/* line 242, style.scss */
 .carousel-control-prev {
   left: 6%;
 }
-/* line 242, style.scss */
+/* line 244, style.scss */
 .carousel-control-prev span {
   -webkit-transform: scale(2.4, 1.8) translate(-1px, 1px);
           transform: scale(2.4, 1.8) translate(-1px, 1px);
 }
 
-/* line 246, style.scss */
+/* line 248, style.scss */
 .carousel-control-next {
   right: 6%;
 }
-/* line 248, style.scss */
+/* line 250, style.scss */
 .carousel-control-next span {
   -webkit-transform: scale(2.4, 1.8) translate(1px, 1px);
           transform: scale(2.4, 1.8) translate(1px, 1px);
 }
 
-/* line 253, style.scss */
+/* line 255, style.scss */
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -311,39 +313,39 @@ nav .burger-button {
   border: 1px solid #fff;
   background-color: #fff;
 }
-/* line 261, style.scss */
+/* line 263, style.scss */
 .carousel-indicators li.active {
   background-color: #646464;
 }
 
-/* line 267, style.scss */
+/* line 269, style.scss */
 #carouselExampleControls .buttonside {
   border: 1px solid #646464;
   border-radius: 50%;
   top: 47%;
   opacity: 1;
 }
-/* line 272, style.scss */
+/* line 274, style.scss */
 #carouselExampleControls .buttonside span {
   color: #646464;
 }
-/* line 275, style.scss */
+/* line 277, style.scss */
 #carouselExampleControls .buttonside:hover {
   background-color: #646464;
   opacity: 1;
 }
-/* line 279, style.scss */
+/* line 281, style.scss */
 #carouselExampleControls .buttonside:hover > span {
   color: #fff;
 }
-/* line 283, style.scss */
+/* line 285, style.scss */
 #carouselExampleControls .tablet-buttons {
   display: none;
   position: relative;
   margin-bottom: 50px;
   text-align: center;
 }
-/* line 288, style.scss */
+/* line 290, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons {
   width: 140px;
   display: inline-block;
@@ -351,7 +353,7 @@ nav .burger-button {
   position: relative;
   margin-top: 35px;
 }
-/* line 294, style.scss */
+/* line 296, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t {
   width: 50px;
   height: 50px;
@@ -362,29 +364,29 @@ nav .burger-button {
   border: 1px solid #646464;
   opacity: 1;
 }
-/* line 302, style.scss */
+/* line 304, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t span {
   color: #646464;
 }
-/* line 305, style.scss */
+/* line 307, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover {
   background-color: #646464;
   opacity: 1;
 }
-/* line 309, style.scss */
+/* line 311, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover > span {
   color: #fff;
 }
-/* line 313, style.scss */
+/* line 315, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-prev {
   float: left;
 }
-/* line 316, style.scss */
+/* line 318, style.scss */
 #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-next {
   float: right;
 }
 
-/* line 322, style.scss */
+/* line 324, style.scss */
 h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -395,7 +397,7 @@ h2 {
   margin: 40px 0 32px;
   position: relative;
 }
-/* line 331, style.scss */
+/* line 333, style.scss */
 h2::after {
   content: '';
   display: block;
@@ -407,63 +409,63 @@ h2::after {
   left: 49%;
 }
 
-/* line 342, style.scss */
+/* line 344, style.scss */
 .frame {
   width: 82%;
   margin: 0 auto;
 }
-/* line 346, style.scss */
+/* line 348, style.scss */
 .frame .rowmini img {
   height: 17%;
 }
-/* line 351, style.scss */
+/* line 353, style.scss */
 .frame .row .colbox {
   color: #646464;
   margin-bottom: 30px;
 }
-/* line 354, style.scss */
+/* line 356, style.scss */
 .frame .row .colbox p:first-child {
   font-family: "GothamProBold", sans-serif;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-/* line 362, style.scss */
+/* line 364, style.scss */
 .maintext {
   width: 725px;
   margin: 0 auto;
 }
 
-/* line 366, style.scss */
+/* line 368, style.scss */
 article {
   margin-bottom: 110px;
 }
 
-/* line 369, style.scss */
+/* line 371, style.scss */
 section {
   color: #646464;
 }
-/* line 371, style.scss */
+/* line 373, style.scss */
 section h3 {
   font-family: "GothamProBold", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin: 40px 0;
 }
-/* line 377, style.scss */
+/* line 379, style.scss */
 section p {
   font-size: 16px;
 }
-/* line 379, style.scss */
+/* line 381, style.scss */
 section p strong {
   font-family: "GothamProBold", sans-serif;
   color: #000;
 }
-/* line 383, style.scss */
+/* line 385, style.scss */
 section p a:hover {
   color: #545ad8;
 }
-/* line 386, style.scss */
+/* line 388, style.scss */
 section p .underlined {
   text-decoration: underline;
 }
@@ -571,7 +573,7 @@ section p .underlined {
     right: -136px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   /* line 5, _tab.scss */
   .popup-body .popup-box .popup-content p {
     padding-top: 40px;
@@ -582,56 +584,51 @@ section p .underlined {
     display: block;
     margin-top: 45px;
   }
-  /* line 12, _tab.scss */
-  .popup-body .popup-box .popup-content form input {
-    text-align: center;
-    margin: 0 auto 18px;
-  }
-  /* line 17, _tab.scss */
+  /* line 13, _tab.scss */
   .popup-body .popup-box .popup-content button {
     display: none;
   }
 
-  /* line 23, _tab.scss */
+  /* line 19, _tab.scss */
   .top {
     padding-top: 80px;
   }
 
-  /* line 27, _tab.scss */
+  /* line 23, _tab.scss */
   h2::after {
     left: 48.7%;
   }
 
-  /* line 31, _tab.scss */
+  /* line 27, _tab.scss */
   .carousel-caption {
     bottom: 20%;
   }
-  /* line 34, _tab.scss */
+  /* line 30, _tab.scss */
   .carousel-caption p:first-child {
     margin: 290px auto 0;
     font-size: 45px;
   }
 
-  /* line 40, _tab.scss */
+  /* line 36, _tab.scss */
   .frame {
     width: 100%;
   }
 
-  /* line 44, _tab.scss */
+  /* line 40, _tab.scss */
   #carouselExampleControls .buttonside {
     display: none;
   }
-  /* line 47, _tab.scss */
+  /* line 43, _tab.scss */
   #carouselExampleControls .tablet-buttons {
     display: block;
   }
 
-  /* line 51, _tab.scss */
+  /* line 47, _tab.scss */
   .maintext {
     width: 670px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   /* line 2, _mob.scss */
   nav {
     height: 64px;

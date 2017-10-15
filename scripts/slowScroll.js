@@ -4,6 +4,11 @@ var point = 0;
 var navlis = document.querySelector('nav').querySelectorAll('li');
 var navhei = document.querySelector('nav').clientHeight;
 
+document.querySelector('.image-box').querySelector('a').onclick = function() {
+	point = 0;
+	scrolled = window.pageYOffset;
+	scrollToPoint();
+}
 navlis[0].onclick = function() {
 	point = 0;
 	scrolled = window.pageYOffset;
@@ -37,8 +42,8 @@ function scrollToPoint() {
 			window.scrollTo(0, scrolled);
 		} else {
 			window.scrollTo(0, scrolled);
-			scrolled = scrolled - 40;// 100 – "скорость" прокрутки, чем меньше тем плавнее
-			timer = setTimeout(scrollToPoint, 8);//чем меньше тем быстрее и плавнее
+			scrolled = scrolled - 40;
+			timer = setTimeout(scrollToPoint, 8);
 		}
 	} else if (scrolled < point) {
 		if ((point - scrolled) < 40) {
