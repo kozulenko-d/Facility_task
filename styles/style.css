@@ -1,8 +1,8 @@
+/* line 1, style.scss */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "GothamProRegular", sans-serif; }
 
 @font-face {
@@ -17,22 +17,26 @@
   src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+/* line 27, style.scss */
 nav {
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 30;
   background-color: #fff;
-  -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s; }
+  /* line 34, style.scss */
   nav .logo-box {
     display: inline-block;
     padding: 13px 0;
     position: relative; }
+    /* line 38, style.scss */
     nav .logo-box .image-box {
       display: inline-block; }
+      /* line 40, style.scss */
       nav .logo-box .image-box img {
         width: 68px; }
+    /* line 44, style.scss */
     nav .logo-box span {
       text-transform: uppercase;
       font-family: "GothamProBold", sans-serif;
@@ -41,37 +45,42 @@ nav {
       margin-left: 25px;
       position: relative;
       top: 2px; }
+  /* line 54, style.scss */
   nav .cross-button {
     position: absolute;
     font-size: 44px;
     top: 20px;
     right: 16px;
     z-index: 15;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     cursor: pointer;
     display: none;
-    -webkit-transition: all ease 0.7s;
     transition: all ease 0.7s; }
+  /* line 65, style.scss */
   nav ul {
     float: right;
     font-size: 0;
     line-height: 80px;
     margin-bottom: 0; }
+    /* line 70, style.scss */
     nav ul li {
       list-style-type: none;
       display: inline-block;
       font-weight: normal;
       margin: 0 11px; }
+      /* line 75, style.scss */
       nav ul li:last-child {
         margin-right: 0; }
+      /* line 78, style.scss */
       nav ul li a {
         font-size: 14px;
         text-transform: uppercase;
         color: #646464; }
+        /* line 82, style.scss */
         nav ul li a:hover {
           text-decoration: none;
           color: #545ad8; }
+  /* line 89, style.scss */
   nav .burger-button {
     width: 18px;
     height: 18px;
@@ -82,26 +91,33 @@ nav {
     display: none;
     cursor: pointer; }
 
+/* line 101, style.scss */
 .top .carousel-item {
   background-color: #000; }
+  /* line 103, style.scss */
   .top .carousel-item img {
     opacity: 0.5; }
 
+/* line 108, style.scss */
 .sect {
   position: relative; }
 
+/* line 111, style.scss */
 .carousel-caption {
   bottom: 26%;
   text-transform: uppercase; }
+  /* line 114, style.scss */
   .carousel-caption p {
     width: 400px;
     font-size: 14px;
     margin: 0 auto 34px; }
+    /* line 118, style.scss */
     .carousel-caption p:first-child {
       font-family: "GothamProBold", sans-serif;
       font-size: 75px;
       width: 100%;
       margin: 0 auto; }
+  /* line 125, style.scss */
   .carousel-caption .popup {
     margin: 0 auto;
     width: 170px;
@@ -117,9 +133,11 @@ nav {
     text-decoration: none;
     display: block;
     line-height: 50px; }
+    /* line 140, style.scss */
     .carousel-caption .popup:focus {
       outline: none; }
 
+/* line 145, style.scss */
 .buttonside {
   width: 50px;
   height: 50px;
@@ -128,28 +146,31 @@ nav {
   border-radius: 50%;
   top: 47%;
   opacity: 1;
-  -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s; }
+  /* line 154, style.scss */
   .buttonside:hover {
     background-color: #fff;
     opacity: 1; }
+  /* line 158, style.scss */
   .buttonside:hover > span {
     color: #000;
-    -webkit-transition: all ease 0.7s;
     transition: all ease 0.7s; }
 
+/* line 163, style.scss */
 .carousel-control-prev {
   left: 6%; }
+  /* line 165, style.scss */
   .carousel-control-prev span {
-    -webkit-transform: scale(2.4, 1.8) translate(-1px, 1px);
-            transform: scale(2.4, 1.8) translate(-1px, 1px); }
+    transform: scale(2.4, 1.8) translate(-1px, 1px); }
 
+/* line 169, style.scss */
 .carousel-control-next {
   right: 6%; }
+  /* line 171, style.scss */
   .carousel-control-next span {
-    -webkit-transform: scale(2.4, 1.8) translate(1px, 1px);
-            transform: scale(2.4, 1.8) translate(1px, 1px); }
+    transform: scale(2.4, 1.8) translate(1px, 1px); }
 
+/* line 176, style.scss */
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -158,53 +179,66 @@ nav {
   cursor: pointer;
   border: 1px solid #fff;
   background-color: #fff; }
+  /* line 184, style.scss */
   .carousel-indicators li.active {
     background-color: #646464; }
 
+/* line 190, style.scss */
 #carouselExampleControls .buttonside {
   border: 1px solid #646464;
   border-radius: 50%;
   top: 47%;
   opacity: 1; }
+  /* line 195, style.scss */
   #carouselExampleControls .buttonside span {
     color: #646464; }
+  /* line 198, style.scss */
   #carouselExampleControls .buttonside:hover {
     background-color: #646464;
     opacity: 1; }
+  /* line 202, style.scss */
   #carouselExampleControls .buttonside:hover > span {
     color: #fff; }
+/* line 206, style.scss */
 #carouselExampleControls .tablet-buttons {
   display: none;
   position: relative;
   margin-bottom: 50px;
   text-align: center; }
+  /* line 211, style.scss */
   #carouselExampleControls .tablet-buttons .centered-buttons {
     width: 140px;
     display: inline-block;
     min-height: 23px;
     position: relative;
     margin-top: 35px; }
+    /* line 217, style.scss */
     #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t {
       width: 50px;
       height: 50px;
       position: static;
       border-radius: 50%;
-      -webkit-transition: all ease 0.7s;
       transition: all ease 0.7s;
       border: 1px solid #646464;
       opacity: 1; }
+      /* line 225, style.scss */
       #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t span {
         color: #646464; }
+      /* line 228, style.scss */
       #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover {
         background-color: #646464;
         opacity: 1; }
+      /* line 232, style.scss */
       #carouselExampleControls .tablet-buttons .centered-buttons .buttonside-t:hover > span {
         color: #fff; }
+    /* line 236, style.scss */
     #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-prev {
       float: left; }
+    /* line 239, style.scss */
     #carouselExampleControls .tablet-buttons .centered-buttons .carousel-control-next {
       float: right; }
 
+/* line 245, style.scss */
 h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -214,6 +248,7 @@ h2 {
   color: #646464;
   margin: 40px 0 32px;
   position: relative; }
+  /* line 254, style.scss */
   h2::after {
     content: '';
     display: block;
@@ -224,98 +259,126 @@ h2 {
     bottom: -5px;
     left: 49%; }
 
+/* line 265, style.scss */
 .frame {
   width: 82%;
   margin: 0 auto; }
+  /* line 269, style.scss */
   .frame .rowmini img {
     height: 17%; }
+  /* line 274, style.scss */
   .frame .row .colbox {
     color: #646464;
     margin-bottom: 30px; }
+    /* line 277, style.scss */
     .frame .row .colbox p:first-child {
       font-family: "GothamProBold", sans-serif;
       font-size: 18px;
       margin-bottom: 20px; }
 
+/* line 285, style.scss */
 .maintext {
   width: 725px;
   margin: 0 auto; }
 
+/* line 289, style.scss */
 article {
   margin-bottom: 110px; }
 
+/* line 292, style.scss */
 section {
   color: #646464; }
+  /* line 294, style.scss */
   section h3 {
     font-family: "GothamProBold", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     margin: 40px 0; }
+  /* line 300, style.scss */
   section p {
     font-size: 16px; }
+    /* line 302, style.scss */
     section p strong {
       font-family: "GothamProBold", sans-serif;
       color: #000; }
+    /* line 306, style.scss */
     section p a:hover {
       color: #545ad8; }
+    /* line 309, style.scss */
     section p .underlined {
       text-decoration: underline; }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 2, _tab.scss */
   .top {
     padding-top: 80px; }
 
+  /* line 6, _tab.scss */
   h2::after {
     left: 48.7%; }
 
+  /* line 10, _tab.scss */
   .carousel-caption {
     bottom: 20%; }
+    /* line 13, _tab.scss */
     .carousel-caption p:first-child {
       margin: 290px auto 0;
       font-size: 45px; }
 
+  /* line 19, _tab.scss */
   .frame {
     width: 100%; }
 
+  /* line 23, _tab.scss */
   #carouselExampleControls .buttonside {
     display: none; }
+  /* line 26, _tab.scss */
   #carouselExampleControls .tablet-buttons {
     display: block; }
 
+  /* line 65, _tab.scss */
   .maintext {
     width: 670px; } }
 @media screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 2, _mob.scss */
   nav {
     height: 64px;
     width: 100%; }
+    /* line 5, _mob.scss */
     nav .burger-button {
       width: 18px;
       height: 18px;
       top: 23px;
       left: 16px;
       display: block; }
+      /* line 11, _mob.scss */
       nav .burger-button .burger-part {
         border: 2px solid #000;
         height: 10px;
         border-left: 0;
         border-right: 0; }
+        /* line 16, _mob.scss */
         nav .burger-button .burger-part:last-child {
           border-top: 0;
           height: 8px; }
+    /* line 22, _mob.scss */
     nav .logo-box {
       padding: 5px 0;
       width: 100%; }
+      /* line 25, _mob.scss */
       nav .logo-box .image-box {
         display: block;
         text-align: center; }
+      /* line 29, _mob.scss */
       nav .logo-box span {
         display: none;
         text-align: center;
         margin: 8px 0 0;
-        -webkit-transition: all ease 0.7s;
         transition: all ease 0.7s; }
+    /* line 36, _mob.scss */
     nav .cross-button {
       display: none; }
+    /* line 39, _mob.scss */
     nav ul {
       float: none;
       margin-top: 10px;
@@ -323,76 +386,96 @@ section {
       position: relative;
       text-align: center;
       display: none;
-      -webkit-transition: all ease 0.7s;
       transition: all ease 0.7s; }
+      /* line 47, _mob.scss */
       nav ul li {
         text-align: center;
         margin: 0 10px; }
+        /* line 50, _mob.scss */
         nav ul li:last-child {
           margin-right: 10px; }
 
+  /* line 56, _mob.scss */
   .top {
     padding-top: 64px; }
 
+  /* line 59, _mob.scss */
   .carousel-caption {
     bottom: 15%; }
+    /* line 61, _mob.scss */
     .carousel-caption p {
       width: 330px;
       font-size: 12px;
       margin: 0 auto 14px; }
+      /* line 65, _mob.scss */
       .carousel-caption p:first-child {
         font-size: 30px;
         margin: 4px auto 0; }
 
+  /* line 72, _mob.scss */
   #carouselExampleControls .container {
     max-width: 660px; }
+    /* line 74, _mob.scss */
     #carouselExampleControls .container .frame {
       width: 100%; }
+  /* line 78, _mob.scss */
   #carouselExampleControls .buttonside {
     display: none; }
+  /* line 81, _mob.scss */
   #carouselExampleControls .tablet-buttons {
     display: block; }
 
+  /* line 86, _mob.scss */
   h2::after {
     left: 48%; }
 
+  /* line 90, _mob.scss */
   .maintext {
     width: 98%; }
 
+  /* line 93, _mob.scss */
   article {
     margin-bottom: 70px; } }
 @media screen and (min-width: 321px) and (max-width: 480px) {
+  /* line 98, _mob.scss */
   nav {
     height: 64px; }
+    /* line 100, _mob.scss */
     nav .burger-button {
       width: 15px;
       height: 13px;
       top: 24px;
       left: 16px;
       display: block; }
+      /* line 106, _mob.scss */
       nav .burger-button .burger-part {
         border: 1px solid #000;
         height: 7px;
         border-left: 0;
         border-right: 0; }
+        /* line 111, _mob.scss */
         nav .burger-button .burger-part:last-child {
           border-top: 0;
           height: 6px; }
+    /* line 117, _mob.scss */
     nav .logo-box {
       padding: 5px 0;
       width: 100%; }
+      /* line 120, _mob.scss */
       nav .logo-box .image-box {
         display: block;
         text-align: center; }
+      /* line 124, _mob.scss */
       nav .logo-box span {
         display: none;
         text-align: center;
         margin: 12px 0 0;
-        -webkit-transition: all ease 0.7s;
         transition: all ease 0.7s; }
+    /* line 131, _mob.scss */
     nav .cross-button {
       font-size: 38px;
       top: 4px; }
+    /* line 135, _mob.scss */
     nav ul {
       float: none;
       margin-top: 80px;
@@ -400,102 +483,131 @@ section {
       position: relative;
       text-align: center;
       display: none;
-      -webkit-transition: all ease 0.7s;
       transition: all ease 0.7s; }
+      /* line 143, _mob.scss */
       nav ul li {
         text-align: center;
         margin: 0 10px; }
+        /* line 146, _mob.scss */
         nav ul li:last-child {
           margin-right: 10px; }
 
+  /* line 152, _mob.scss */
   .top {
     padding-top: 64px; }
+    /* line 154, _mob.scss */
     .top .carousel-item {
       overflow: hidden; }
+      /* line 156, _mob.scss */
       .top .carousel-item img {
         min-height: 460px;
         min-width: 818px;
         position: relative;
         left: -70vw; }
 
+  /* line 164, _mob.scss */
   .carousel-caption {
     bottom: 15%; }
+    /* line 166, _mob.scss */
     .carousel-caption p {
       width: 230px;
       font-size: 12px;
       margin: 0 auto 14px; }
+      /* line 170, _mob.scss */
       .carousel-caption p:first-child {
         font-size: 25px;
         margin: 34px auto 0; }
+    /* line 175, _mob.scss */
     .carousel-caption .popup {
       font-size: 16px; }
 
+  /* line 180, _mob.scss */
   #carouselExampleControls .buttonside {
     display: none; }
+  /* line 183, _mob.scss */
   #carouselExampleControls .tablet-buttons {
     display: block; }
 
+  /* line 188, _mob.scss */
   h2::after {
     left: 45%; }
 
+  /* line 193, _mob.scss */
   .rowmini img {
     max-width: 99% !important;
     display: none; }
 
+  /* line 201, _mob.scss */
   #carouselExampleControls .carousel-item:first-child .rowmini img:first-child {
     display: block; }
+  /* line 208, _mob.scss */
   #carouselExampleControls .carousel-item:nth-child(2) .rowmini img:nth-child(2) {
     display: block; }
+  /* line 215, _mob.scss */
   #carouselExampleControls .carousel-item:last-child .rowmini img:last-child {
     display: block; }
+  /* line 220, _mob.scss */
   #carouselExampleControls .tablet-buttons {
     margin-bottom: 20px; }
 
+  /* line 224, _mob.scss */
   .maintext {
     width: 98%; }
 
+  /* line 227, _mob.scss */
   .articles {
     margin-bottom: 70px; }
 
+  /* line 230, _mob.scss */
   section {
     color: #000; }
+    /* line 232, _mob.scss */
     section h3 {
       font-size: 14px;
       margin: 35px 0; }
+    /* line 236, _mob.scss */
     section p {
       font-size: 14px; } }
 @media screen and (max-width: 320px) {
+  /* line 242, _mob.scss */
   nav {
     height: 64px; }
+    /* line 244, _mob.scss */
     nav .burger-button {
       width: 15px;
       height: 13px;
       top: 24px;
       left: 16px;
       display: block; }
+      /* line 250, _mob.scss */
       nav .burger-button .burger-part {
         border: 1px solid #000;
         height: 7px;
         border-left: 0;
         border-right: 0; }
+        /* line 255, _mob.scss */
         nav .burger-button .burger-part:last-child {
           border-top: 0;
           height: 6px; }
+    /* line 261, _mob.scss */
     nav .logo-box {
       padding: 5px 0;
       width: 100%; }
+      /* line 264, _mob.scss */
       nav .logo-box .image-box {
         display: block;
         text-align: center; }
+      /* line 268, _mob.scss */
       nav .logo-box span {
         display: none;
         text-align: center;
         margin: 12px 0 0;
-        -webkit-transition: all ease 0.7s;
         transition: all ease 0.7s; }
+    /* line 275, _mob.scss */
     nav .cross-button {
       font-size: 38px;
       top: 4px; }
+    /* line 279, _mob.scss */
     nav ul {
       float: none;
       margin-top: 80px;
@@ -503,67 +615,88 @@ section {
       position: relative;
       text-align: center;
       display: none;
-      -webkit-transition: all ease 0.7s;
       transition: all ease 0.7s; }
+      /* line 287, _mob.scss */
       nav ul li {
         text-align: center;
         margin: 0 10px; }
+        /* line 290, _mob.scss */
         nav ul li:last-child {
           margin-right: 10px; }
 
+  /* line 296, _mob.scss */
   .top {
     padding-top: 64px; }
+    /* line 298, _mob.scss */
     .top .carousel-item {
       overflow: hidden; }
+      /* line 300, _mob.scss */
       .top .carousel-item img {
         min-height: 460px;
         min-width: 818px;
         position: relative;
         left: -70vw; }
 
+  /* line 308, _mob.scss */
   .carousel-caption {
     right: 10%;
     left: 10%;
     bottom: 25%; }
+    /* line 312, _mob.scss */
     .carousel-caption p {
       width: 215px;
       font-size: 12px;
       margin: 0 auto 14px; }
+      /* line 316, _mob.scss */
       .carousel-caption p:first-child {
         font-size: 25px;
         margin: 34px auto 0; }
+    /* line 321, _mob.scss */
     .carousel-caption .popup {
       font-size: 16px; }
 
+  /* line 325, _mob.scss */
   .buttonside {
     display: none; }
 
+  /* line 329, _mob.scss */
   h2::after {
     left: 44%; }
 
+  /* line 334, _mob.scss */
   .rowmini img {
     max-width: 99% !important;
+    flex: 0 0 99.99% !important;
     display: none; }
 
+  /* line 343, _mob.scss */
   #carouselExampleControls .carousel-item:first-child .rowmini img:first-child {
     display: block; }
+  /* line 350, _mob.scss */
   #carouselExampleControls .carousel-item:nth-child(2) .rowmini img:nth-child(2) {
     display: block; }
+  /* line 357, _mob.scss */
   #carouselExampleControls .carousel-item:last-child .rowmini img:last-child {
     display: block; }
+  /* line 362, _mob.scss */
   #carouselExampleControls .tablet-buttons {
     margin-bottom: 20px; }
 
+  /* line 366, _mob.scss */
   .maintext {
     width: 98%; }
 
+  /* line 369, _mob.scss */
   .articles {
     margin-bottom: 70px; }
 
+  /* line 372, _mob.scss */
   section {
     color: #000; }
+    /* line 374, _mob.scss */
     section h3 {
       font-size: 14px;
       margin: 35px 0; }
+    /* line 378, _mob.scss */
     section p {
       font-size: 14px; } }

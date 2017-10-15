@@ -32,21 +32,21 @@ navlis[4].onclick = function() {
 
 function scrollToPoint() {
 	if (scrolled > point) {
-		if ((scrolled - point) < 50) {
+		if ((scrolled - point) < 40) {
 			scrolled = point;
 			window.scrollTo(0, scrolled);
 		} else {
 			window.scrollTo(0, scrolled);
-			scrolled = scrolled - 50;// 100 – "скорость" прокрутки, чем меньше тем плавнее
+			scrolled = scrolled - 40;// 100 – "скорость" прокрутки, чем меньше тем плавнее
 			timer = setTimeout(scrollToPoint, 8);//чем меньше тем быстрее и плавнее
 		}
 	} else if (scrolled < point) {
-		if ((point - scrolled) < 50) {
+		if ((point - scrolled) < 40) {
 			scrolled = point;
 			window.scrollTo(0, scrolled);
 		} else {
 			window.scrollTo(0, scrolled);
-			scrolled = scrolled + 50;
+			scrolled = scrolled + 40;
 			timer = setTimeout(scrollToPoint, 8);
 		}
 	} else {
