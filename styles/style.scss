@@ -24,7 +24,7 @@
 }
 $fb : "GothamProBold", sans-serif;
 $t : all ease .7s;
-nav {
+.collapsed {
 	height: 80px;
 	width: 100%;
 	position: fixed;
@@ -148,7 +148,6 @@ nav {
 				button {
 					display: block;
 					margin-top: 20px;
-					// cursor: pointer;
 				}
 			}
 			button {
@@ -164,6 +163,9 @@ nav {
 				display: block;
 				margin: 0 auto;
 				cursor: pointer;
+				&:focus {
+					outline: none;
+				}
 			}
 			.popup-cross {
 				transform: rotate(45deg);

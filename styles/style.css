@@ -17,7 +17,7 @@
   src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
-nav {
+.collapsed {
   height: 80px;
   width: 100%;
   position: fixed;
@@ -25,15 +25,15 @@ nav {
   background-color: #fff;
   -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s; }
-  nav .logo-box {
+  .collapsed .logo-box {
     display: inline-block;
     padding: 13px 0;
     position: relative; }
-    nav .logo-box .image-box {
+    .collapsed .logo-box .image-box {
       display: inline-block; }
-      nav .logo-box .image-box img {
+      .collapsed .logo-box .image-box img {
         width: 68px; }
-    nav .logo-box span {
+    .collapsed .logo-box span {
       text-transform: uppercase;
       font-family: "GothamProBold", sans-serif;
       font-size: 18px;
@@ -41,7 +41,7 @@ nav {
       margin-left: 25px;
       position: relative;
       top: 2px; }
-  nav .cross-button {
+  .collapsed .cross-button {
     position: absolute;
     font-size: 44px;
     top: 20px;
@@ -54,26 +54,26 @@ nav {
             animation-fill-mode: forwards;
     -webkit-animation-duration: 1s;
             animation-duration: 1s; }
-  nav ul {
+  .collapsed ul {
     float: right;
     font-size: 0;
     line-height: 80px;
     margin-bottom: 0; }
-    nav ul li {
+    .collapsed ul li {
       list-style-type: none;
       display: inline-block;
       font-weight: normal;
       margin: 0 11px; }
-      nav ul li:last-child {
+      .collapsed ul li:last-child {
         margin-right: 0; }
-      nav ul li a {
+      .collapsed ul li a {
         font-size: 14px;
         text-transform: uppercase;
         color: #646464; }
-        nav ul li a:hover {
+        .collapsed ul li a:hover {
           text-decoration: none;
           color: #545ad8; }
-  nav .burger-button {
+  .collapsed .burger-button {
     width: 18px;
     height: 18px;
     position: absolute;
@@ -145,6 +145,8 @@ nav {
         display: block;
         margin: 0 auto;
         cursor: pointer; }
+        .popup-body .popup-box .popup-content button:focus {
+          outline: none; }
       .popup-body .popup-box .popup-content .popup-cross {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
@@ -442,33 +444,33 @@ section {
   .maintext {
     width: 670px; } }
 @media screen and (max-width: 768px) {
-  nav {
+  .collapsed {
     height: 64px; }
-    nav .burger-button {
+    .collapsed .burger-button {
       top: 23px;
       left: 16px;
       display: block; }
-      nav .burger-button .burger-part {
+      .collapsed .burger-button .burger-part {
         border: 2px solid #000;
         height: 10px;
         border-left: 0;
         border-right: 0; }
-        nav .burger-button .burger-part:last-child {
+        .collapsed .burger-button .burger-part:last-child {
           border-top: 0;
           height: 8px; }
-    nav .logo-box {
+    .collapsed .logo-box {
       padding: 5px 0;
       width: 100%; }
-      nav .logo-box .image-box {
+      .collapsed .logo-box .image-box {
         display: block;
         text-align: center; }
-      nav .logo-box span {
+      .collapsed .logo-box span {
         display: none;
         text-align: center;
         margin: 8px 0 0;
         -webkit-transition: all ease 0.7s;
         transition: all ease 0.7s; }
-    nav ul {
+    .collapsed ul {
       float: none;
       margin-top: 10px;
       line-height: 20px;
@@ -477,11 +479,18 @@ section {
       display: none;
       -webkit-transition: all ease 0.7s;
       transition: all ease 0.7s; }
-      nav ul li {
+      .collapsed ul li {
         text-align: center;
         margin: 0 10px; }
-        nav ul li:last-child {
+        .collapsed ul li:last-child {
           margin-right: 10px; }
+
+  .expanded {
+    height: 135px; }
+    .expanded .logo-box span {
+      display: block; }
+    .expanded ul {
+      display: block; }
 
   .popup-body .popup-box {
     width: 480px; }
@@ -513,25 +522,32 @@ section {
   article {
     margin-bottom: 70px; } }
 @media screen and (max-width: 480px) {
-  nav .burger-button {
+  .collapsed .burger-button {
     width: 15px;
     height: 13px;
     top: 24px; }
-    nav .burger-button .burger-part {
+    .collapsed .burger-button .burger-part {
       border: 1px solid #000;
       height: 7px;
       border-left: 0;
       border-right: 0; }
-      nav .burger-button .burger-part:last-child {
+      .collapsed .burger-button .burger-part:last-child {
         height: 6px; }
-  nav .logo-box span {
+  .collapsed .logo-box span {
     margin: 12px 0 0; }
-  nav .cross-button {
+  .collapsed .cross-button {
     font-size: 38px;
     top: 4px; }
-  nav ul {
+  .collapsed ul {
     margin-top: 80px;
     line-height: 40px; }
+    .collapsed ul li {
+      display: block; }
+
+  .expanded {
+    height: 100vh; }
+    .expanded .image-box img {
+      display: none; }
 
   .popup-body .popup-box {
     width: 100%; }

@@ -1,5 +1,5 @@
 @media screen and (max-width : 768px) {
-	nav {
+	.collapsed {
 		height: 64px;
 		.burger-button {
 			top: 23px;
@@ -47,6 +47,17 @@
 			}
 		}
 	}
+	.expanded {
+		height: 135px;
+		.logo-box {
+			span {
+				display: block;
+			}
+		}
+		ul {
+			display: block;
+		}
+	}
 	.popup-body {
 		.popup-box {
 			width: 480px;
@@ -88,7 +99,7 @@
 	}
 }
 @media screen and (max-width : 480px) {
-	nav {
+	.collapsed {
 		.burger-button {
 			width: 15px;
 			height: 13px;
@@ -115,6 +126,17 @@
 		ul {
 			margin-top: 80px;
 			line-height: 40px;
+			li {
+				display: block;
+			}
+		}
+	}
+	.expanded {
+		height: 100vh;
+		.image-box {
+			img {
+				display: none;
+			}
 		}
 	}
 	.popup-body {

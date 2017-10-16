@@ -15,6 +15,12 @@ function closePopup() {
 	bodyPopup.style.display = 'none';
 }
 
+document.querySelector('.popup-content').querySelectorAll('button').forEach( function(e) {
+	e.addEventListener('click', closePopup, false)
+});
+
+document.querySelector('.popup-content').querySelector('.popup-cross').addEventListener('click', closePopup, false);
+
 inpName.onblur = function() {
 	var nam = inpName.value;
 	if (nam.length > 1) {
