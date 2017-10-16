@@ -20,7 +20,6 @@ navlis.forEach(function(e, i) {
 	e.addEventListener("click", function scrollToPoint() {
 		navhei = document.querySelector('nav').clientHeight;
 		point = sections[i].offsetTop - navhei;
-		console.log(point);
 		if (scrolled > point) {
 			if ((scrolled - point) < 40) {
 				scrolled = point;
