@@ -131,8 +131,7 @@ nav {
           display: none; }
         .popup-body .popup-box .popup-content form button {
           display: block;
-          margin-top: 20px;
-          cursor: pointer; }
+          margin-top: 20px; }
       .popup-body .popup-box .popup-content button {
         width: 168px;
         height: 48px;
@@ -144,7 +143,8 @@ nav {
         border-radius: 18px;
         border: 0;
         display: block;
-        margin: 0 auto; }
+        margin: 0 auto;
+        cursor: pointer; }
       .popup-body .popup-box .popup-content .popup-cross {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
@@ -423,7 +423,7 @@ section {
     padding-top: 80px; }
 
   h2::after {
-    left: 48.7%; }
+    left: 48.3%; }
 
   .carousel-caption {
     bottom: 20%; }
@@ -505,7 +505,7 @@ section {
       width: 100%; }
 
   h2::after {
-    left: 48%; }
+    left: 47%; }
 
   .maintext {
     width: 98%; }
@@ -555,7 +555,7 @@ section {
     font-size: 16px; }
 
   h2::after {
-    left: 45%; }
+    left: 46.5%; }
 
   .rowmini img {
     max-width: 99% !important;
@@ -592,4 +592,4 @@ section {
     display: none; }
 
   h2::after {
-    left: 44%; } }
+    left: 45%; } }

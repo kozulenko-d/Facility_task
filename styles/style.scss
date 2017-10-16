@@ -148,7 +148,7 @@ nav {
 				button {
 					display: block;
 					margin-top: 20px;
-					cursor: pointer;
+					// cursor: pointer;
 				}
 			}
 			button {
@@ -163,6 +163,7 @@ nav {
 				border: 0;
 				display: block;
 				margin: 0 auto;
+				cursor: pointer;
 			}
 			.popup-cross {
 				transform: rotate(45deg);
