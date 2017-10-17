@@ -1,10 +1,10 @@
-var scrolled = window.pageYOffset;;
-var timer, navhei, point;
+var scrolled = window.pageYOffset;
+var timer, headerhei, point;
 var menu = document.querySelector('nav');
-var navlis = document.querySelector('nav').querySelectorAll('li');
+var navlis = menu.querySelectorAll('li');
 var sections = document.querySelectorAll('.sect');
 
-document.querySelector('.image-box').querySelector('a').onclick = scrollToTop;
+document.querySelector('header .image-box a').onclick = scrollToTop;
 function scrollToTop() {
 	if (scrolled > 0) {
 		window.scrollTo(0, scrolled);
@@ -18,8 +18,12 @@ function scrollToTop() {
 
 navlis.forEach(function(e, i) {
 	e.addEventListener("click", function scrollToPoint() {
-		navhei = document.querySelector('nav').clientHeight;
-		point = sections[i].offsetTop - navhei;
+		if (document.body.clientWidth >= 481) {
+			headerhei = document.querySelector('header').clientHeight;
+		} else {
+			headerhei = 64;
+		}
+		point = sections[i].offsetTop - headerhei;
 		if (scrolled > point) {
 			if ((scrolled - point) < 40) {
 				scrolled = point;

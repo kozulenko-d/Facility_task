@@ -54,6 +54,8 @@
             animation-fill-mode: forwards;
     -webkit-animation-duration: 1s;
             animation-duration: 1s; }
+  .collapsed nav {
+    float: right; }
   .collapsed ul {
     float: right;
     font-size: 0;
@@ -102,19 +104,18 @@
     background-color: #fff;
     position: relative;
     z-index: 110; }
-    .popup-body .popup-box .popup-content {
+    .popup-body .popup-box #popup-content {
       position: relative; }
-      .popup-body .popup-box .popup-content p {
+      .popup-body .popup-box #popup-content p {
         font-family: "GothamProBold", sans-serif;
         font-size: 18px;
         color: #646464;
         text-align: center;
-        padding-top: 105px;
-        margin-bottom: 50px; }
-      .popup-body .popup-box .popup-content form {
-        display: none;
+        padding-top: 40px;
+        margin-bottom: 45px; }
+      .popup-body .popup-box #popup-content form {
         text-align: center; }
-        .popup-body .popup-box .popup-content form input {
+        .popup-body .popup-box #popup-content form input {
           display: block;
           width: 300px;
           height: 50px;
@@ -122,17 +123,14 @@
           border-radius: 8px;
           text-align: center;
           margin: 0 auto 18px; }
-          .popup-body .popup-box .popup-content form input:focus {
+          .popup-body .popup-box #popup-content form input:focus {
             outline: none; }
-        .popup-body .popup-box .popup-content form span {
+        .popup-body .popup-box #popup-content form span {
           color: red;
           font-size: 11px;
           margin-top: -15px;
           display: none; }
-        .popup-body .popup-box .popup-content form button {
-          display: block;
-          margin-top: 20px; }
-      .popup-body .popup-box .popup-content button {
+      .popup-body .popup-box #popup-content button, .popup-body .popup-box #popup-content input[type="submit"] {
         width: 168px;
         height: 48px;
         background-color: #646464;
@@ -145,9 +143,11 @@
         display: block;
         margin: 0 auto;
         cursor: pointer; }
-        .popup-body .popup-box .popup-content button:focus {
+        .popup-body .popup-box #popup-content button:focus, .popup-body .popup-box #popup-content input[type="submit"]:focus {
           outline: none; }
-      .popup-body .popup-box .popup-content .popup-cross {
+      .popup-body .popup-box #popup-content button {
+        display: none; }
+      .popup-body .popup-box #popup-content .popup-cross {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
         position: absolute;
@@ -156,6 +156,15 @@
         top: 2px;
         right: 17px;
         cursor: pointer; }
+    .popup-body .popup-box .popup-content-sent {
+      position: relative; }
+      .popup-body .popup-box .popup-content-sent p {
+        padding-top: 105px !important;
+        margin-bottom: 50px !important; }
+      .popup-body .popup-box .popup-content-sent form {
+        display: none; }
+      .popup-body .popup-box .popup-content-sent button {
+        display: block !important; }
 
 .top .carousel-item {
   background-color: #000; }
@@ -412,15 +421,6 @@ section {
             transform: rotate(45deg);
     right: -136px; } }
 @media screen and (max-width: 1024px) {
-  .popup-body .popup-box .popup-content p {
-    padding-top: 40px;
-    margin-bottom: 45px; }
-  .popup-body .popup-box .popup-content form {
-    display: block;
-    margin-top: 45px; }
-  .popup-body .popup-box .popup-content button {
-    display: none; }
-
   .top {
     padding-top: 80px; }
 
@@ -470,6 +470,8 @@ section {
         margin: 8px 0 0;
         -webkit-transition: all ease 0.7s;
         transition: all ease 0.7s; }
+    .collapsed nav {
+      float: none; }
     .collapsed ul {
       float: none;
       margin-top: 10px;
@@ -551,7 +553,7 @@ section {
 
   .popup-body .popup-box {
     width: 100%; }
-    .popup-body .popup-box .popup-content form input {
+    .popup-body .popup-box #popup-content form input:not([type="submit"]) {
       width: 94%; }
 
   .top .carousel-item {

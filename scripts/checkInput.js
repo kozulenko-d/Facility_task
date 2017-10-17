@@ -1,9 +1,11 @@
 var inpName = document.querySelector('#userName');
 var inpMail = document.querySelector('#userEmail');
+var inpSubmit = document.querySelector('#inputSend');
 var errName = document.querySelector('.error-message-name');
 var errMail = document.querySelector('.error-message-mail');
 var bodyPopup = document.querySelector('.popup-body');
 var buttonPopup = document.querySelectorAll('.popup-button');
+var contentPopup = document.querySelector('#popup-content');
 
 for (var i = 0; i < buttonPopup.length; i++) {
 	buttonPopup[i].onclick = function() {
@@ -12,14 +14,15 @@ for (var i = 0; i < buttonPopup.length; i++) {
 }
 
 function closePopup() {
+	contentPopup.classList.remove('popup-content-sent');
 	bodyPopup.style.display = 'none';
 }
-
-document.querySelector('.popup-content').querySelectorAll('button').forEach( function(e) {
-	e.addEventListener('click', closePopup, false)
-});
-
-document.querySelector('.popup-content').querySelector('.popup-cross').addEventListener('click', closePopup, false);
+function sendInfo() {
+	contentPopup.classList.add('popup-content-sent');
+}
+inpSubmit.onclick = sendInfo;
+contentPopup.querySelector('button').addEventListener('click', closePopup, false);
+contentPopup.querySelector('.popup-cross').addEventListener('click', closePopup, false);
 
 inpName.onblur = function() {
 	var nam = inpName.value;

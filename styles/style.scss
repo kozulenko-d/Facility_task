@@ -62,6 +62,9 @@ $t : all ease .7s;
 		animation-fill-mode: forwards;
 		animation-duration: 1s;
 	}
+	nav {
+		float: right;
+	}
 	ul {
 		float: right;
 		font-size: 0;
@@ -114,18 +117,17 @@ $t : all ease .7s;
 		background-color: #fff;
 		position: relative;
 		z-index: 110;
-		.popup-content {
+		#popup-content {
 			position: relative;
 			p {
 				font-family: $fb;
 				font-size: 18px;
 				color: #646464;
 				text-align: center;
-				padding-top: 105px;
-				margin-bottom: 50px;
+				padding-top: 40px;
+				margin-bottom: 45px;
 			}
 			form {
-				display: none;
 				text-align: center;
 				input {
 					display: block;
@@ -145,12 +147,8 @@ $t : all ease .7s;
 					margin-top: -15px;
 					display: none;
 				}
-				button {
-					display: block;
-					margin-top: 20px;
-				}
 			}
-			button {
+			button, input[type="submit"] {
 				width: 168px;
 				height: 48px;
 				background-color: #646464;
@@ -167,6 +165,9 @@ $t : all ease .7s;
 					outline: none;
 				}
 			}
+			button {
+				display: none;
+			}
 			.popup-cross {
 				transform: rotate(45deg);
 				position: absolute;
@@ -175,6 +176,19 @@ $t : all ease .7s;
 				top: 2px;
 				right: 17px;
 				cursor: pointer;
+			}
+		}
+		.popup-content-sent {
+			position: relative;
+			p {
+				padding-top: 105px !important;
+				margin-bottom: 50px !important;
+			}
+			form {
+				display: none;
+			}
+			button {
+				display: block !important;
 			}
 		}
 	}
